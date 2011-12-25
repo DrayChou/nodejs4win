@@ -1,0 +1,6 @@
+{# ../../header.html #}
+
+		<h3 class="title">n2Mvc Demo</h3>
+		<h1>#{msg}</h1>
+
+{# ../../footer.html #}
