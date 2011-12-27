@@ -4,6 +4,7 @@
  */
 
 var express = require('express'),
+	routes = require('./routes'),
     jst = require('jst'),
     locales = require('locales');
 
@@ -40,12 +41,12 @@ app.helpers({
 });
 
 // Routes
-
-app.get('/', function(req, res){
-  res.render('index', {
-    title: 'Express'
-  });
-});
+app.get('/', routes.index);
+// app.get('/', function(req, res){
+  // res.render('index', {
+    // title: 'Express'
+  // });
+// });
 
 // Only listen on $ node app.js
 
